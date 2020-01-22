@@ -1,0 +1,11 @@
+version: "3"
+services:
+    app:
+        container_name: "titanic"
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        image: titanic
+        volumes: 
+            - .:/src
+        tty: true
